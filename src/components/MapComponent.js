@@ -39,14 +39,14 @@ const MapComponent = (props) => {
   }, [props.pointA, props.pointB, props.distance]);
 
   return (
-    <div className="child" id="map" style={{ height: "400px" }}>
+    <div className="child" id="map" style={{ height: "80vh" }}>
       <MapContainer
         center={pointA || pointB || [40.72068, -74.071825]}
         zoom={13}
         minZoom={2}
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <MyMapComponent pointA={pointA} pointB={pointB} distance={distance} />
