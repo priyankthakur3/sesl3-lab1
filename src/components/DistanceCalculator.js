@@ -101,7 +101,7 @@ const DistanceCalculator = (props) => {
 
   return (
     <div className="container form">
-      <span>Please Input co-ordinate in Input below</span>
+      <h2>Input Co-ordinates for Point A and Point B</h2>
       <div className="input-group">
         <label htmlFor="pointA">Point A</label>
         <input

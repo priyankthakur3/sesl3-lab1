@@ -4,6 +4,7 @@ import MapComponent from "./components/MapComponent";
 import { useState } from "react";
 
 function App() {
+  console.log(process.env);
   const [points, setPoints] = useState({ pointA: null, pointB: null });
   const [distance, setDistance] = useState("");
   const updatePointsDistance = (newpointA, newpointB, newdistance) => {
